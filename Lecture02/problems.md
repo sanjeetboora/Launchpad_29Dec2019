@@ -1,27 +1,27 @@
 # Lecture 2 - Summary !!
 
 #### Data types
-> What are data types?
-> What's the need of data types in C++?
-> Data types which we have in C++.
-> How we can calculate the ranges for different data types?
+> What are data types?<br>
+> What's the need of data types in C++?<br>
+> Data types which we have in C++.<br>
+> How we can calculate the ranges for different data types?<br>
 
 ---
 
 #### Different Number systems
-> Conversion from Decimal number system to Binary number system
-> Conversion from Binary number system to Decimal number system
+> Conversion from Decimal number system to Binary number system<br>
+> Conversion from Binary number system to Decimal number system<br>
 
 ---
 
 #### Data modifiers
-> Data modifiers which we have in C++.
-> How we can calculate the modified ranges when we use data modifiers?
-> How the negative numbers are stored?
-> -> In 2's compliment 
-> -> How to find 2's compliment of a binary number?
-> -> Why we use 2's compliment form to store a negative number?
-> dataTypes.cpp
+> Data modifiers which we have in C++.<br>
+> How we can calculate the modified ranges when we use data modifiers?<br>
+> How the negative numbers are stored?<br>
+> -> In 2's compliment <br>
+> -> How to find 2's compliment of a binary number?<br>
+> -> Why we use 2's compliment form to store a negative number?<br>
+> dataTypes.cpp<br>
 
 ---
 
