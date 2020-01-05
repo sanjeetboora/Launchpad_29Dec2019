@@ -2,17 +2,17 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-		
-	for (int i = 0; i < 10; i=i+1)
+
+	for (int i = 0; i < 10; i = i + 1)
 	{
-		cout<<i<<endl;
+		cout << i << endl;
 	}
 
-	// int i = 0;
-	// for (; i < 10; )
+	// int i = 0;  //Initialisation
+	// for (; i < 10; ) //Termination Condition
 	// {
 	// 	cout<<i<<endl;
-	// 	i=i+1;
+	// 	i=i+1;		//Processing
 	// }
 
 	return 0;

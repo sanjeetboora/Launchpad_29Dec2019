@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
 	while (divideby <= rootnum) {
 
 		if (num % divideby == 0) {
-			isprime=false;
+			isprime = false;
 			cout << num << " is composite" << endl;
 			break;
 		}
