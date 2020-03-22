@@ -33,3 +33,12 @@ int main(int argc, char const *argv[])
 	
 	return 0;
 }
+
+
+//H.W
+
+//Given a stream of characters and we have to find first non repeating character each time a character is inserted to the stream.
+//Input  : a a b c
+//Output : a -1 b b
+
+

@@ -75,3 +75,10 @@ int main(int argc, char const *argv[])
 
 	return 0;
 }
+
+
+//H.W
+
+//Convert Prefix to Postfix
+//Design a stack using queue
+//Design a Queue using stack
