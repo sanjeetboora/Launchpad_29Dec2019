@@ -221,6 +221,89 @@ void reverseIterative(node* &head) {
 	head = prev; //bcz prev is last node
 }
 
+node* reverseRecursive(node* head) {
+
+	if ( head == NULL || head->next == NULL) {
+		return head;
+	}
+
+	node* newhead = reverseRecursive(head->next);
+	node* curr = head;
+	curr -> next ->next = curr;
+	curr -> next = NULL;
+	return newhead;
+
+}
+
+void KthFromLast(node *head, int K)
+{
+	node *slow = head;
+	node *fast = head;
+
+	int count = 0;
+	if (head != NULL)
+	{
+		while ( count < K )
+		{
+			if (fast == NULL)
+			{
+				cout << K << " is greater than the no. of nodes in the list" << endl;
+				return;
+			}
+			fast = fast->next;
+			count++;
+		}
+
+		while (fast != NULL)
+		{
+			slow = slow->next;
+			fast  = fast->next;
+		}
+
+		cout << K << "th node from last is " << slow->data << endl;
+
+	}
+}
+
+
+node* merge(node* a, node* b) {
+	if (a == NULL) {
+		return b;
+	}
+	else if (b == NULL) {
+		return a;
+	}
+
+	node* c;
+	if (a-> data <= b->data) {
+		c = a;
+		c->next = merge(a->next, b);
+	}
+	else {
+		c = b;
+		c->next = merge(a, b->next);
+	}
+	return c;
+}
+
+
+node* mergeSort(node* head) {
+	if (head == NULL || head->next == NULL) {
+		return head;
+	}
+
+	node* midNode = mid(head);
+	node* a = head; //left half linked list
+	node* b = midNode->next; //right half linked list
+
+	midNode->next = NULL;
+	a = mergeSort(a);
+	b = mergeSort(b);
+	node* c = merge(a, b);
+
+	return c;
+}
+
 
 int main(int argc, char const *argv[])
 {
@@ -249,23 +332,31 @@ int main(int argc, char const *argv[])
 	// printList(head);
 	node* head2 = NULL;
 
-	cin >> head >> head2;
-	cout << head << head2 << endl;
+	// cin >> head >> head2;
+	// cout << head << head2 << endl;
 
 	// cout << searchItertive(head, 2) << endl;
 	// cout << searchRecursive(head, 2) << endl;
 	// cout << mid(head)->data << endl;
 	// cout << mid(head2)->data << endl;
-	reverseIterative(head);
-	reverseIterative(head2);
-	cout << head << head2 << endl;
+	//reverseIterative(head);
+	//reverseIterative(head2);
+	// head = reverseRecursive(head);
+	// head2 = reverseRecursive(head2);
+
+
+	//cout << head << head2 << endl;
+
+	//node* head3 = merge(head, head2);
+
+	cin >> head;
+	head = mergeSort(head);
+	cout << head << endl;
+
+
+
 
 
 	return 0;
 }
 
-
-
-//reverse recursive
-//print kth node from last -> 1,2,3,4,5 => k=2, output = 4
-//linked list  -> merge sort
