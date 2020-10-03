@@ -1,4 +1,4 @@
-# Lecture 2 - Summary !!
+# Lecture 2 - Summary of Lecture!!
 
 #### Data types
 > What are data types?<br>
